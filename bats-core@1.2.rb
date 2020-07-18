@@ -6,10 +6,6 @@ class BatsCoreAT12 < Formula
 
   bottle :unneeded
 
-  depends_on "coreutils"
-
-  conflicts_with "bats", :because => "both install `bats` executables"
-
   def install
     system "./install.sh", prefix
   end
